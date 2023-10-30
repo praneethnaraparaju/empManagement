@@ -8,7 +8,8 @@ import (
 
 func main() {
     r := gin.Default()
-    config.ConnectDB()
+    config.ConnectEmployeeDB()
+	config.ConnectDepartmentDB()
     routes.SetupRoutes(r)
     r.Run(":8081") // You can change the port as needed
 }
